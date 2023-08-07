@@ -5,6 +5,7 @@
 .projects_list {
   @include flex_start;
   justify-content: space-between;
+  margin-top: 60px;
 }
 
 .project_item {
