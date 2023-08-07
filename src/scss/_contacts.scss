@@ -6,6 +6,9 @@
   display: flex;
   margin-top: 20px;
   flex-wrap: nowrap;
+  @media (max-width: 1000px) {
+    flex-direction: column;
+  }
 }
 .contact_form {
   max-width: 390px;

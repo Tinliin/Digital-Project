@@ -1,8 +1,10 @@
 .about_us {
   display: flex;
-  // padding: 0 50px;
   justify-content: center;
   margin-top: 150px;
+  @media (max-width: 800px) {
+    flex-direction: column;
+  }
 }
 
 .about_us_pictures {
@@ -32,6 +34,9 @@
   flex-direction: column;
   max-width: 35vw;
   margin: 0 0 0 30px;
+  @media (max-width: 800px) {
+    max-width: 85vw;
+  }
 }
 
 .about_us_description {
