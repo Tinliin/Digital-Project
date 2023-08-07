@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'TT Hoves'; 
+    src: url('./fonts/TTHovesRegular.ttf') format('ttf'),
+         url('./fonts/TT\ Hoves\ Pro\ Trial\ Bold.ttf') format('ttf'),
+         url('./fonts/TT\ Hoves\ Pro\ Trial\ Thin.ttf') format('ttf');
+           }
+@font-face {
+    font-family: Sf Pro Display;
+    src: url(./fonts/SF-Pro-Display-Bold.otf);
+    src: url(./fonts/SF-Pro-Display-Regular.otf);
+}
+  

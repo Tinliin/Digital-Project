@@ -1,0 +1,49 @@
+.about_us {
+  display: flex;
+  // padding: 0 50px;
+  justify-content: center;
+  margin-top: 150px;
+}
+
+.about_us_pictures {
+  max-width: 650px;
+  min-width: 280px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about_us_picture {
+  display: flex;
+  justify-content: center;
+  margin-right: 15px;
+}
+
+.about_us_third_picture {
+  align-self: center;
+}
+.margin_bottom {
+  margin-bottom: 10px;
+}
+
+.about_us_text_container {
+  display: flex;
+  flex-direction: column;
+  max-width: 35vw;
+  margin: 0 0 0 30px;
+}
+
+.about_us_description {
+  font-family: TT Hoves Pro Trial;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.reading {
+  @include white-button;
+  @include main-text;
+}

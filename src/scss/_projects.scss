@@ -1,0 +1,64 @@
+.projects {
+  @include flex_column;
+}
+
+.projects_list {
+  @include flex_start;
+  justify-content: space-between;
+}
+
+.project_item {
+  position: relative;
+  display: inline-flex;
+  list-style: none;
+  margin-bottom: 15px;
+  &:hover .project_hover {
+    opacity: 1;
+  }
+}
+
+.project_hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(51, 51, 51, 0.7);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.hover_name {
+  display: flex;
+  justify-content: center;
+  font-family: TT Hoves Pro Trial;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 64px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ffffff;
+  margin: 0 auto;
+  margin-left: 5%;
+}
+
+.hover_link {
+  font-family: Gothic A1, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: 0.2em;
+  text-align: left;
+  text-decoration: none;
+  color: #ffffff;
+  margin: 14px auto 0 5%;
+}
+
+.projects_all {
+  @include gray-button;
+  margin-left: auto;
+}

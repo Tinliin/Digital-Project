@@ -1,0 +1,31 @@
+.content_container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: TT Hoves, sans-serif;
+  @include main-text;
+}
+
+.big_gray_text {
+  font-family: TT Hoves, sans-serif;
+  font-size: 64px;
+  font-weight: 300;
+  line-height: 64px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #bdbdbd;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.bold_black_text {
+  font-family: TT Hoves Pro Trial, sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 64px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #333333;
+  text-transform: uppercase;
+  margin: 0;
+}
