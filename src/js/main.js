@@ -13,6 +13,6 @@ form.addEventListener('click', (e) => {
     const input_container = e.target.closest('.input_container');
     const placeholder = input_container.querySelector('.placeholder');
     placeholder.style.display = "none";
-  }
+  };
 
 });
