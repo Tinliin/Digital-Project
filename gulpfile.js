@@ -44,12 +44,6 @@ const stylesbuild = done => {
 	done()
 }
 
-// const images = () => {
-// 	src('./src/img/**/*.{jpg,jpeg,png,svg}')
-// 	.pipe(imagemin())
-// 	.pipe(dest('./dist/img'))
-// 	.on('end', done)
-// }
 const images = () => {
 	return new Promise((resolve, reject) => {
 	  src('./src/img/**/*.{jpg,jpeg,png,svg}')
