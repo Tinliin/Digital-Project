@@ -44,11 +44,22 @@ const stylesbuild = done => {
 	done()
 }
 
+// const images = () => {
+// 	src('./src/img/**/*.{jpg,jpeg,png,svg}')
+// 	.pipe(imagemin())
+// 	.pipe(dest('./dist/img'))
+// 	.on('end', done)
+// }
 const images = () => {
-	src('./src/img/**/*.{jpg,jpeg,png,svg}')
-	.pipe(imagemin())
-	.pipe(dest('./dist/img'))
-}
+	return new Promise((resolve, reject) => {
+	  src('./src/img/**/*.{jpg,jpeg,png,svg}')
+		.pipe(imagemin())
+		.pipe(dest('./dist/img'))
+		.on('end', resolve)
+		.on('error', reject);
+	});
+  };
+
 const watcher = () => {
 	watch('*.html').on('change', browserSync.reload)
 	watch('./src/js/*.js').on('change', series(scripts, browserSync.reload))
